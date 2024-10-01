@@ -1,0 +1,95 @@
+div{
+    width: 100%;
+    display: inline-block;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: white;
+}
+
+
+ul li {
+    float: left;
+}
+
+  
+ul li a {
+    display: inline-block;
+    color:#000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+ul li a:hover {
+    background-color: #182b49; 
+    color: white; 
+    font-size: 28px;
+}
+  
+#navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #182b49;
+    color: #000000;
+  }
+
+  #navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+.navbarLogo{
+    max-width: 400px;
+}
+
+.sec1{
+    background-color: rgb(245, 240, 230);
+    scroll-margin-top: 46px;
+}
+
+.sec2{
+    background-image: url(img/BackgroundLab1.jpeg);
+    color:white;
+    scroll-margin-top: 46px;
+}
+.sec3{
+    background-color: rgb(245, 240, 230);
+}
+.text1{
+    font-size: 28px;
+}
+.text2{
+    font-size: 28px;
+}
+.text3{
+    font-size: 28px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px; 
+    justify-items: center; 
+}
+
+.one, .two, .three, .four {
+    background-color: #182b49;
+    color: white;
+    max-height: 500px;
+    overflow-y: scroll; 
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
