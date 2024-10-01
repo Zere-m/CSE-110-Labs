@@ -17,6 +17,10 @@ ul li {
 }
 
   
+img{
+    max-width: 100%;
+}
+
 ul li a {
     display: inline-block;
     color:#000000;
@@ -55,6 +59,7 @@ ul li a:hover {
 .sec1{
     background-color: rgb(245, 240, 230);
     scroll-margin-top: 46px;
+    max-width: 100%;
 }
 
 .sec2{
@@ -83,13 +88,41 @@ ul li a:hover {
 }
 
 .one, .two, .three, .four {
+
     background-color: #182b49;
     color: white;
     max-height: 500px;
-    overflow-y: scroll; 
+    overflow-y: auto; 
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
+    width: 100%; 
+    font-size: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
+@media screen and (max-width: 800px) {
+    
+    ul li{
+        display:none;
+    }
 
+    .navbarLogo{
+        max-width: 75%;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+    }
+  }
