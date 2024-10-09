@@ -70,10 +70,10 @@
            const content = document.getElementById("content").value;
            const dropdown = document.getElementById("dropdown").value;
 
+           // For the alert window
            const titleInput = document.getElementById("title");
            const maxLength = 50;
-           ////
-           const charCountDisplay = document.getElementById('charCount');
+
            
 
            // Display the result
@@ -100,13 +100,12 @@
            this.style.backgroundColor = "";  // Reset background on blur
        });
 
+       // Check if the character length exceeds the limit
        document.getElementById("title").addEventListener("input", function(){
         const maxLength = 50;
         const titleInput = document.getElementById("title");
     
-    // Check if the character length exceeds the limit
         if (titleInput.value.length > maxLength) {
-            // Display the file:// message
             alert('Title cannot exceed 50 characters');
         }
        });
